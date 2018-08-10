@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'MetropolisMedium';
+    src: url('../fonts/MetropolisMedium.eot');
+    src: url('../fonts/MetropolisMedium.eot') format('embedded-opentype'),
+    url('../fonts/MetropolisMedium.woff2') format('woff2'),
+    url('../fonts/MetropolisMedium.woff') format('woff'),
+    url('../fonts/MetropolisMedium.ttf') format('truetype'),
+    url('../fonts/MetropolisMedium.svg#MetropolisMedium') format('svg');
+}
+@font-face {
+    font-family: 'MetropolisLight';
+    src: url('../fonts/MetropolisLight.eot');
+    src: url('../fonts/MetropolisLight.eot') format('embedded-opentype'),
+    url('../fonts/MetropolisLight.woff2') format('woff2'),
+    url('../fonts/MetropolisLight.woff') format('woff'),
+    url('../fonts/MetropolisLight.ttf') format('truetype'),
+    url('../fonts/MetropolisLight.svg#MetropolisLight') format('svg');
+}
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeueRegular.eot') format('embedded-opentype'),
+    url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+    url('../fonts/BebasNeueRegular.woff') format('woff'),
+    url('../fonts/BebasNeueRegular.ttf') format('truetype'),
+    url('../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    font-family: 'MetropolisMedium', sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 25px;
+    padding-bottom: 23px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+nav {
+    clear: both;
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+.container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.line {
+    border-bottom: solid 2px #464646;
+    padding-bottom: 18px;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 290px;
+}
+.logo {
+    float: left;
+}
+/* правильный вариант формы поиска */
+/*header form{*/
+    /*float: right;*/
+    /*width: 200px;*/
+    /*height: 50px;*/
+    /*background-color: #c0c0c0;*/
+/*}*/
+/*header form:after{*/
+    /*content: "";*/
+    /*display: block;*/
+    /*clear: both;*/
+/*}*/
+/*header form input{*/
+    /*float: left;*/
+    /*width: 70%;*/
+    /*border: none;*/
+    /*background-color: transparent;*/
+    /*line-height: 50px;*/
+    /*color: #000;*/
+    /*text-transform: uppercase;*/
+    /*font-size: 16px;*/
+    /*padding-left: 15px;*/
+    /*box-sizing: border-box;*/
+/*}*/
+/*header form button{*/
+    /*float: right;*/
+    /*width: 29%;*/
+    /*line-height: 50px;*/
+    /*text-align: center;*/
+    /*background-color: transparent;*/
+    /*border: none;*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*header form button i{*/
+    /*font-size: 20px;*/
+    /*color: red;*/
+/*}*/
+
+header form {
+    float: right;
+}
+header form:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+header form input {
+    float: left;
+    line-height: 41px;
+    margin-top: 6px;
+    padding-left: 12px;
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 2px 0 0 2px;
+}
+header form button {
+    float: left;
+    line-height: 41px;
+    font-size: 17px;
+    margin-top: 6px;
+    padding-right: 12px;
+    background-color: #ebebeb;
+    border: none;
+    color: #fa090a;
+    border-radius: 0 2px 2px 0;
+}
+
+.but {
+    color: white;
+    font-size: 15px;
+    line-height: 41px;
+    font-family: 'MetropolisMedium';
+    border-radius: 2px;
+    margin: 6px 0 0 25px;
+    padding-left: 0 12px;
+    min-width: 165px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+.store {
+    float: right;
+    background-color: #252525;
+    color: white;
+}
+.store i {
+    margin-right: 11px;
+}
+.login {
+    float: right;
+    background-color: #464646;
+}
+.login i {
+    margin-right: 13px;
+}
+.sign_up {
+    float: right;
+    background-color: #fa090a;
+}
+.sign_up i {
+    margin-right: 13px;
+}
+nav ul {
+    float: left;
+    padding-top: 23px;
+    list-style: none;
+}
+
+nav li {
+    float: left;
+    display: inline-block;
+    margin: 0 4px;
+    padding-bottom: 6px;
+}
+nav ul li:first-child {
+    margin-left: -6px;
+}
+
+nav ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav li a:hover {
+    border-bottom-color: #ff0000;
+}
+nav li a {
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-family: 'BebasNeueRegular';
+    padding: 9px 6px 0 6px;
+    border-bottom: solid 3px rgba(0, 0, 0, 0);
+}
+li.dropdown{
+    position: relative;
+}
+li.dropdown ul {
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    width: 200px;
+    background-color: #464646;
+    top: 33px;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+li.dropdown:hover ul{
+    opacity: 1;
+}
+li.dropdown:hover ul li a{
+    border-bottom: none;
+}
+li.dropdown ul li{
+    display: block;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    border-bottom: solid 2px #252525;
+}
+li.dropdown ul li a{
+    font-family: 'BebasNeueBook', sans-serif;
+    color: white;
+    font-size: 27px;
+    text-decoration: none;
+    line-height: 50px;
+}
+.social {
+    width: 36px;
+    height: 36px;
+    float: right;
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+    background-color: #fa090a;
+    padding: 5px;
+    margin: 20px 0 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+section{
+    position: relative;
+}
+
+.bg{
+    z-index: 1;
+    width: 100%;
+
+}
+h1{
+    font-family: 'BebasNeueRegular';;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    border-bottom: red solid 1px;
+    padding-bottom: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 25px;
+}
